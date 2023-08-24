@@ -15,8 +15,8 @@
                 class="amount-input-field"
             />
         </div>
-        <p class="calculated-amount">Calculated Amount: {{ calculatedAmount }}</p>
-        <p class="total-amount">Total Amount: {{ totalAmount }}</p>
+        <p class="calculated-amount">From USD to {{ selectedCurrency }}: {{ calculatedAmount }}</p>
+        <p class="total-amount">Total amount with fees <a v-if="selectedCurrency === 'EUR'">and discount</a>: {{ totalAmount }}</p>
         <button @click="purchaseCurrency" :disabled="purchaseInProgress || amount == 0" class="purchase-button">Purchase</button>
         <p v-if="purchaseSuccess" class="success-message">Order saved! Thank you for your purchase.</p>
     </div>

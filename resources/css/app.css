@@ -52,6 +52,7 @@
 .calculated-amount,
 .total-amount {
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .input_description {

@@ -17,13 +17,11 @@ class CurrencyLayerApiService
 
     public function getCurrencies() : array
     {
-        var_dump('getCurrencies');
         return $this->makeRequest(env('CURRENCY_LAYER_CURRENCIES_LIST_ENDPOINT'))['currencies'];
     }
 
     public function getExchangeRates(string $from, array $to) : array
     {
-        var_dump('getExchangeRates');
         $params = [
             'currencies' => implode(',', $to),
             'source' => $from,

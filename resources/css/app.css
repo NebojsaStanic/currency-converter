@@ -1,0 +1,67 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styles to the entire app */
+#app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles for the CurrencyConverter component */
+.currency-converter {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.currency-converter h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.currency-select,
+.amount-input-field,
+.purchase-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.purchase-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.purchase-button:hover {
+    background-color: #0056b3;
+}
+
+.calculated-amount,
+.total-amount {
+    font-size: 16px;
+}
+
+.input_description {
+    font-size: 16px;
+    margin-left: 5px;
+    display: flex;
+}
+
+.success-message {
+    font-size: 16px;
+    color: #009900;
+    margin-top: 10px;
+}
